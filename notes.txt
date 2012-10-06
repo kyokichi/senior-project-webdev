@@ -1,0 +1,25 @@
+/usr/share/tomcat7 (CATALINA_HOME)
+/usr/share/tomcat7-root 
+/var/lib/tomcat7/  (CATALINA_BASE)
+/etc/tomcat7 
+
+/etc/init.d/tomcat7 (important file)
+
+http://www.openlogic.com/wazi/bid/188102/How-to-Run-Multiple-Instances-of-Tomcat-on-a-Single-Server
+
+Installed Ant (apt-get install ant)
+/usr/share/ant
+
+Start and Stop Tomcat
+service tomcat start
+service tomcat stop
+
+
+
+Problems I am having with Ant and Tomcat:
+http://stackoverflow.com/questions/7251098/ant-tomcat-build-error-java-lang-noclassdeffounderror-org-apache-tomcat-util
+
+http://stackoverflow.com/questions/5163438/ant-tomcat-7-reload-filenotfoundexception
+
+
+Fixed it by installing the tomcat7-admin
