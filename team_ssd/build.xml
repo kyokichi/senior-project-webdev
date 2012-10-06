@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -194,6 +195,19 @@
       <include name="*.jar"/>
     </fileset>
 
+  </path>
+
+  <path id="catalina-ant-classpath">
+    <!-- We need the Catalina jars for Tomcat -->
+    <!--  * for other app servers - check the docs --> 
+    <fileset dir="${appserver.lib}">
+        <include name="catalina-ant.jar"/>
+        <include name="tomcat-coyote.jar"/>
+        <include name="tomcat-util.jar"/>
+    </fileset>
+    <fileset dir="${appserver.home}/bin">
+                <include name="tomcat-juli.jar"/>
+    </fileset>
   </path>
 
 
