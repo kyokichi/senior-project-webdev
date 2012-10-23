@@ -4,6 +4,9 @@ sshjorge () {
 ssh -T jorge@visa.cs.fiu.edu <<- EOF
 
 ls
+echo ""
+cd seniorproject
+ls
 
 EOF
 }
